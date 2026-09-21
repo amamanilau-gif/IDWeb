@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f6f9;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+header {
+    background-color: #a8a2a2;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 1px 1px;
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+.form-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;           
+    padding: 32px;              
+    border-radius: 8px;         
+    box-shadow: 0 2px 2px rgb(0, 0, 0);
+}
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+legend {
+    padding: 0px 10px;
+    color: #7b7b7b;
+    font-size: 20px;
+}
+.form-group {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.form-label {
+    display: block;
+    margin-bottom: 4px;
+    color: #333333;
+    font-size: 16px;
+}
+.form-input {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: inherit;
+}
+textarea.form-input {
+    resize: vertical;
+    min-height: 48px;
+}
+.form-checkbox {
+    display: flex;
+}
+button {
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    display: flex;
+}

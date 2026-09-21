@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/styleLab02.css">
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO</h1>
+    </header>
+    <main>
+        <form action="#" method="POST" class="form-container">
+            <fieldset>
+                <legend><strong>Información Personal</strong></legend>
+                <div class="form-group">
+                    <label for="codigo" class="form-label">Codigo de Estudiante:</label>
+                    <input type="number" id="codigo" name="codigo" class="form-input"
+                        min="10000000" max="99999999" required placeholder="Ej. 20261234">
+                </div>
+                <div class="form-group">
+                    <label for="nombres" class="form-label">Nombres y Apellidos</label>
+                    <input type="text" id="nombres" name="nombres" class="form-input"
+                    required placeholder="Ej. Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <label for="dni" class="form-label">DNI:</label>
+                    <input type="text" id="dni" name="dni" class="form-input"
+                           pattern="[0-9]{8}" minlength="8" maxlength="8" required placeholder="8 dígitos">
+                </div>
+                <div class="form-group">
+                    <label for="carrera" class="form-label">Carrera Profesional/Escuela</label>
+                    <select id="carrera" name="carrera" class="form-input" required>
+                        <option value="">--Seleccione una carrera--</option>
+                        <option value="sistemas">Ingeniería de sistemas</option>
+                        <option value="software">Ingeniera de Software</option>
+                        <option value="computacion">Ciencias de la computación</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="celular" class="form-label">Celular</label>
+                    <input type="tel" id="celular" name="celular" class="form-input"
+                    pattern="[0-9]{9}" minlength="9" maxlength="9" required placeholder="Ej. 987654321">
+                </div>
+                    <div class="form-group">
+                        <label>Género: </label>
+                        <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+                        <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                        <label><input type="radio" name="genero" value="prefi"> Prefiero no decirlo</label>
+                    </div>
+                <div class="form-group">
+                    <label for="nacimiento" class="form-label">Fecha de Nacimiento</label>
+                    <input type="date" id="nacimiento" name="nacimiento" class="form-input"
+                    min="2000-01-01" max="2010-12-31">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Información de la cuenta</strong></legend>
+                <div class="form-group">
+                    <label for="correo" class="form-label">Correo Institucional</label>
+                    <input type="email" id="correo" name="correo" class="form-input"
+                    required placeholder="usuario@unsa.edu.pe">
+                </div>
+                <div class="form-group">
+                    <label>Turno</label>
+                    <label><input type="radio" name="turno" value="a" required>A</label>
+                    <label><input type="radio" name="turno" value="b">B</label>
+                    <label><input type="radio" name="turno" value="c">C</label>
+                </div>
+                <div class="form-group">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" id="contraseña" name="contraseña" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="comentarios" class="form-label">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" class="form-input" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="condiciones" class="form-label">Términos y condiciones:</label>
+                    <label>
+                        Acepto los términos y condiciones del sistema
+                        <input type="checkbox" id="condiciones" name="condiciones" class="form-checkbox" required>
+                    </label>
+                </div>
+            </fieldset>
+            <button class="checkbox" type="submit">Registrar</button>
+        </form>
+    </main> 
+    <footer>
+        <p><br><br>© 2026 Anderson Mamani. Todos los derechos reservados.</p>
+    </footer>
+</body>
