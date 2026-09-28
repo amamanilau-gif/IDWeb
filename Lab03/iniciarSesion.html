@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar Sesion</title>
+        <link rel="stylesheet" href="css/styleLab02.css"> 
+    </head>
+    <body>
+        <main>
+            <form action="#" method="POST" class="form-container">
+            <fieldset>
+                <legend><strong>Información de la cuenta</strong></legend>
+                <div class="form-group">
+                    <label for="correo" class="form-label">Correo Institucional</label>
+                    <input type="email" id="correo" name="correo" class="form-input"
+                    required placeholder="usuario@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" id="contraseña" name="contraseña" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="condiciones" class="form-label">Términos y condiciones:</label>
+                    <label>
+                        Acepto los términos y condiciones del sistema
+                        <input type="checkbox" id="condiciones" name="condiciones" class="form-checkbox" required>
+                    </label>
+                </div>
+            </fieldset>
+                <nav class="navbar">
+                    <a class="registrar" href="registrarse.html">Registrarse</a>
+                </nav>
+                <button class="checkbox" type="submit">Iniciar Sesion</button>
+            </form>
+        </main>
+    </body>
