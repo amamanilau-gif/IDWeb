@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const { titulo, curso, fecha, completed } = task;
 
             return `
-                <li class="list-group-item d-flex justify-content-between align-items-center ${completed ? 'list-group-item-success text-decoration-line-through' : ''}">
+                <li class="list-group-item d-flex justify-content-between align-items-center ${completed ? 
+                    'list-group-item-success text-decoration-line-through' : ''}">
                     <div>
                         <strong>${titulo}</strong> - <span class="text-secondary">${curso}</span>
                         <br><small class="text-muted">Entrega: ${fecha}</small>

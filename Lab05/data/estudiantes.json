@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana Gómez",
+    "carrera": "Ingenieria de Sistemas"
+  },
+  {
+    "nombre": "Lucia Morales",
+    "carrera": "Sistemas",
+    "id": 2
+  }
+]
